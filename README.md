@@ -1,2 +1,2 @@
-# Worldpokerock-
+# Worldpokerock
 Worldpokerock wiki
