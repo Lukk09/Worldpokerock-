@@ -1,26 +1,32 @@
+/* Estilo geral do corpo da página */
 body {
-    font-family: Arial, sans-serif;  
-    background-color: #f5f5f5;     
-    padding: 20px;          
+    font-family: Arial, sans-serif;   /* Define a fonte da página como Arial ou sem serifa */
+    background-color: #f5f5f5;        /* Cor de fundo clara */
+    padding: 20px;                    /* Espaço interno ao redor do conteúdo da página */
 }
 
+/* Estilo dos cartões */
 .cartao {
-    background-color: #ffffff;     
-    border: 2px solid #cccccc;    
-    border-radius: 10px;    
-    padding: 15px;          
-    margin-bottom: 15px;    
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-    cursor: pointer;       
+    background-color: #ffffff;        /* Fundo branco do cartão */
+    border: 2px solid #cccccc;       /* Borda cinza clara */
+    border-radius: 10px;              /* Bordas arredondadas */
+    padding: 15px;                    /* Espaço interno dentro do cartão */
+    margin-bottom: 15px;              /* Espaço entre os cartões */
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1); /* Sombra suave para efeito de profundidade */
+    cursor: pointer;                  /* Muda o cursor ao passar por cima do cartão */
 }
 
+/* Estilo do título dentro do cartão */
 .titulo {
-    color: #333333; 
-    margin: 0;          
+    color: #333333;                   /* Cor do título */
+    margin: 0;                        /* Remove margem padrão do título */
 }
 
+/* Estilo da descrição dentro do cartão */
 .descricao {
-    color: #555555; 
-    display: none;            
-    margin-top: 10px;  
+    color: #555555;                   /* Cor do texto da descrição */
+    max-height: 0;                     /* Altura inicial zero para ocultar o conteúdo */
+    overflow: hidden;                  /* Esconde o conteúdo que ultrapassa o limite */
+    transition: max-height 0.5s ease;  /* Animação suave da altura ao abrir ou fechar */
+    margin-top: 10px;                  /* Espaço acima da descrição */
 }
